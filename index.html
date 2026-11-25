@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hlynssjóður – Minningarsjóður Hlyns Elísar Guðlaugssonar</title>
+<meta name="description" content="Hlynssjóður er styrktarsjóður Hlyns Elísar Guðlaugssonar. Sjóðurinn styður við foreldra sem missa barn sitt í eða skömmu eftir fæðingu.">
+<link rel="icon" href="myndir/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  :root { --ink:#111; --muted:#555; --line:#111; --soft:#f8f8f8; --band:#5f7a80; }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; color:var(--ink); background:#fff;
+         font-family:"Nunito Sans", "Avenir Next", Avenir, system-ui, sans-serif; font-weight:300;
+         line-height:1.8; font-size:18px; }
+  img { max-width:100%; display:block; }
+  a { color:inherit; }
+  .wrap { max-width:1100px; margin:0 auto; padding:0 24px; }
+
+  /* Haus */
+  header { padding:28px 0 0; text-align:center; border-bottom:1px solid #ccc; background:#fff;
+           position:sticky; top:0; z-index:10; }
+  header .logo { width:72px; margin:0 auto 18px; }
+  header nav { border-top:1px solid var(--line); padding:14px 0 18px; }
+  header nav a { text-decoration:none; font-size:15px; margin:0 12px; font-weight:400; }
+  header nav a:hover { text-decoration:underline; }
+
+  /* Forsíða */
+  .hero { padding:60px 0 20px; text-align:center; }
+  .hero img { width:min(560px, 90%); margin:0 auto; }
+  .welcome { background:var(--soft); padding:56px 0 64px; text-align:center; }
+  h1, h2 { font-family:Raleway, sans-serif; font-weight:300; margin:0; line-height:1.15; }
+  h1 { font-size:clamp(34px, 6vw, 72px); }
+  h2 { font-size:clamp(32px, 5vw, 64px); }
+
+  /* Um */
+  .um { padding:96px 0; }
+  .um-grid { display:grid; grid-template-columns:1.4fr 1fr; gap:56px; align-items:center; }
+  .um h2 { text-transform:uppercase; margin-bottom:40px; }
+  .um p { font-size:clamp(17px, 1.6vw, 21px); margin:0; }
+  .um figure { margin:0; }
+  .um figure img { border-radius:2px; }
+
+  /* Myndband */
+  .band { position:relative; height:clamp(200px, 27vw, 520px); overflow:hidden; background:var(--band); }
+  .band video, .band img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+
+  /* Framlag */
+  .framlag { padding:96px 0; text-align:center; }
+  .framlag h2 { margin-bottom:28px; }
+  .framlag .intro { max-width:900px; margin:0 auto 40px; }
+  form { max-width:940px; margin:0 auto; text-align:left; }
+  .row { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  label { display:block; }
+  label span { position:absolute; left:-9999px; }
+  input, textarea { width:100%; font:inherit; font-size:17px; border:0; border-bottom:1px solid var(--line);
+                    padding:22px 12px 10px; background:transparent; outline:none; margin-bottom:12px; }
+  input:focus, textarea:focus { border-color:var(--band); }
+  textarea { border:1px solid var(--line); min-height:180px; resize:vertical; margin-top:8px; padding:16px 12px; }
+  button { display:block; margin:-26px auto 0; position:relative; background:#000; color:#fff; border:0;
+           font:inherit; font-size:20px; padding:14px 0; width:min(320px, 80%); cursor:pointer; }
+  button:hover { background:#333; }
+  .note { text-align:center; color:var(--muted); font-size:14px; margin-top:22px; min-height:1em; }
+
+  footer { text-align:center; padding:56px 0 48px; font-size:17px; }
+  footer p { margin:6px 0; }
+  footer .copy { color:var(--muted); font-size:14px; margin-top:28px; }
+
+  @media (max-width:760px) {
+    body { font-size:17px; }
+    .um-grid, .row { grid-template-columns:1fr; gap:0; }
+    .um figure { margin-top:40px; }
+    .um, .framlag { padding:64px 0; }
+  }
+  @media (prefers-reduced-motion: reduce) { .band video { display:none; } }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="#heim"><img class="logo" src="myndir/logo.png" alt="Hlynssjóður"></a>
+  <nav class="wrap">
+    <a href="#heim">Heim</a>
+    <a href="#um">Um Hlynssjóð</a>
+    <a href="#framlag">Framlag</a>
+  </nav>
+</header>
+
+<main>
+  <section id="heim" class="hero">
+    <img src="myndir/logo-stort.png" alt="Laufblað hlyns – merki Hlynssjóðs">
+  </section>
+
+  <section class="welcome">
+    <div class="wrap"><h1>Velkomin á síðu Minningarsjóðs Hlyns&nbsp;Elísar Guðlaugssonar</h1></div>
+  </section>
+
+  <section id="um" class="um">
+    <div class="wrap um-grid">
+      <div>
+        <h2>Um Hlynssjóð</h2>
+        <p>Hlynssjóður er styrktarsjóður Hlyns Elísar Guðlaugssonar, sem lést einungis 10 daga gamall.
+           Sjóðnum er ætlað að styðja við foreldra sem missa barn sitt í eða skömmu eftir fæðingu.
+           Sjóðurinn tekur við frjálsum framlögum frá einstaklingum og fyrirtækjum, en einnig er safnað
+           í sjóðinn með tónleikahaldi.</p>
+      </div>
+      <figure><img src="myndir/hlynslauf.jpg" alt="Laufblað garðahlyns" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <!-- Skógarmyndband: settu skrána myndir/skogur.mp4 í möppuna. Þangað til sést kyrrmyndin. -->
+  <section class="band" aria-hidden="true">
+    <video autoplay muted loop playsinline poster="myndir/skogur.jpg">
+      <source src="myndir/skogur.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <section id="framlag" class="framlag">
+    <div class="wrap">
+      <h2>Framlag til sjóðsins</h2>
+      <p class="intro">Við erum afskaplega þakklát fyrir hvert einasta framlag, hversu smátt sem það er.
+         Skráðu nafn, tölvupóst og símanúmer hér að neðan og við sendum fljótlega upplýsingar um hvernig
+         hægt er að leggja sjóðnum lið.</p>
+
+      <form id="form" novalidate>
+        <label><span>Nafn</span><input name="nafn" placeholder="Nafn" required></label>
+        <label><span>Eftirnafn</span><input name="eftirnafn" placeholder="Eftirnafn"></label>
+        <div class="row">
+          <label><span>Tölvupóstfang</span><input name="netfang" type="email" placeholder="Tölvupóstfang" required></label>
+          <label><span>Símanúmer</span><input name="simi" type="tel" placeholder="Símanúmer"></label>
+        </div>
+        <label><span>Athugasemdir</span><textarea name="athugasemdir" placeholder="Athugasemdir"></textarea></label>
+        <button type="submit">Senda upplýsingar</button>
+        <p class="note" id="note"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p><a href="mailto:upplysingar@hlynssjodur.is">upplysingar@hlynssjodur.is</a></p>
+  <p class="copy">© <span id="ar">2026</span> Hlynssjóður</p>
+</footer>
+
+<script>
+  document.getElementById('ar').textContent = new Date().getFullYear();
+  // Engin netþjónsvinnsla hjá kyrrstæðri hýsingu: formið opnar tölvupóst með upplýsingunum útfylltum.
+  document.getElementById('form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var f = e.target, note = document.getElementById('note');
+    if (!f.nafn.value.trim() || !f.netfang.value.trim()) {
+      note.textContent = 'Vinsamlegast fylltu út nafn og tölvupóstfang.'; return;
+    }
+    var body = 'Nafn: ' + f.nafn.value + ' ' + f.eftirnafn.value +
+               '\nTölvupóstfang: ' + f.netfang.value +
+               '\nSímanúmer: ' + f.simi.value +
+               '\n\nAthugasemdir:\n' + f.athugasemdir.value;
+    window.location.href = 'mailto:upplysingar@hlynssjodur.is?subject=' +
+      encodeURIComponent('Framlag til Hlynssjóðs') + '&body=' + encodeURIComponent(body);
+    note.textContent = 'Tölvupóstforritið þitt opnast – ýttu á „Senda“ þar til að klára.';
+  });
+</script>
+</body>
+</html>
